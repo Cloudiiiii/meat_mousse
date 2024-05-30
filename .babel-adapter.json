@@ -1,0 +1,4 @@
+{
+    "excludedModules": ["react", "react-dom"]
+  }
+  

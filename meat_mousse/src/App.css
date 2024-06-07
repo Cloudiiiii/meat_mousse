@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.artwork-item {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.artwork-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.artwork-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

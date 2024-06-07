@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import './App.css';
+import artworkData from './artworkData';
+import ArtworkItem from './ArtworkItem';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to Meat_Mousse!</h1>
       </header>
+      <div className="artwork-gallery">
+        {artworkData.mao((artwork, index) => (
+          <ArtworkItem
+          key={index}
+          title={artwork.title}
+          description={artwork.descrption}
+          imageUrl={artwork.imageUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ const artworkData = [
     {
         title: "Artwork 1",
         description: "Art description",
-        imageUrl: "images/capy.jpg"
+        imageUrl: "/capy.jpg"
     },
     {
         title: "Artwork 2",

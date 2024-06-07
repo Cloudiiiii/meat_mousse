@@ -7,6 +7,7 @@ function ArtworkItem({title, description, imageUrl}) {
             <img src={imageUrl} alt={title} className="artwork-image" />
             <h2>{title}</h2>
             <p>{description}</p>
+            <p>Image URL: {imageUrl}</p>
         </div>
     );
 }
